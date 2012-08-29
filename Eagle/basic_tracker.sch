@@ -2362,36 +2362,6 @@ Author Anthony Stirk / http://ava.upuaut.net</description>
 </library>
 <library name="adafruit">
 <packages>
-<package name="AVRISP">
-<wire x1="-2.54" y1="3.048" x2="-1.778" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="3.81" x2="1.778" y2="3.81" width="0.127" layer="21"/>
-<wire x1="1.778" y1="3.81" x2="2.54" y2="3.048" width="0.127" layer="21"/>
-<wire x1="2.54" y1="3.048" x2="2.54" y2="1.778" width="0.127" layer="21"/>
-<wire x1="2.54" y1="1.778" x2="2.032" y2="1.27" width="0.127" layer="21"/>
-<wire x1="2.032" y1="1.27" x2="2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="0.762" x2="2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-0.762" x2="2.032" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="2.032" y1="-1.27" x2="2.54" y2="-1.778" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-1.778" x2="2.54" y2="-3.048" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-3.048" x2="1.778" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="1.778" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-1.778" y1="-3.81" x2="-2.54" y2="-3.048" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.54" y2="-1.778" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-1.778" x2="-2.032" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-2.032" y1="-1.27" x2="-2.54" y2="-0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="0.762" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="0.762" x2="-2.032" y2="1.27" width="0.127" layer="21"/>
-<wire x1="-2.032" y1="1.27" x2="-2.54" y2="1.778" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="1.778" x2="-2.54" y2="3.048" width="0.127" layer="21"/>
-<pad name="3" x="-1.27" y="0" drill="0.9" diameter="1.6256"/>
-<pad name="4" x="1.27" y="0" drill="0.9" diameter="1.6256"/>
-<pad name="2" x="1.27" y="2.54" drill="0.9" diameter="1.6256"/>
-<pad name="1" x="-1.27" y="2.54" drill="0.9" diameter="1.6256"/>
-<pad name="5" x="-1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
-<pad name="6" x="1.27" y="-2.54" drill="0.9" diameter="1.6256"/>
-<text x="-3.048" y="-3.048" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="-3.048" y="3.556" size="1.016" layer="21" font="vector">1</text>
-</package>
 <package name="JST-PH-2-SMT-RA">
 <description>2-Pin JST PH Series Right-Angle Connector (+/- for batteries)</description>
 <wire x1="-4" y1="3" x2="4" y2="3" width="0.2032" layer="51"/>
@@ -2511,19 +2481,6 @@ JST PH 2-pin thru-home side entry</description>
 </package>
 </packages>
 <symbols>
-<symbol name="AVRISP">
-<wire x1="-7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<text x="-2.54" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
-<pin name="MISO" x="-12.7" y="2.54" length="middle" direction="in"/>
-<pin name="SCK" x="-12.7" y="0" length="middle" direction="out"/>
-<pin name="RST" x="-12.7" y="-2.54" length="middle" direction="out"/>
-<pin name="GND" x="15.24" y="-2.54" length="middle" direction="pwr" rot="R180"/>
-<pin name="MOSI" x="15.24" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="VCC" x="15.24" y="2.54" length="middle" direction="pwr" rot="R180"/>
-</symbol>
 <symbol name="PINHD2">
 <wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
@@ -2550,29 +2507,6 @@ JST PH 2-pin thru-home side entry</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="AVRISP" prefix="ISP">
-<description>&lt;b&gt;AVR ISP HEADER&lt;/b&gt;
-&lt;br&gt;
-Standard 6 pin header for AVR programming</description>
-<gates>
-<gate name="G$1" symbol="AVRISP" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="-6" package="AVRISP">
-<connects>
-<connect gate="G$1" pin="GND" pad="6"/>
-<connect gate="G$1" pin="MISO" pad="1"/>
-<connect gate="G$1" pin="MOSI" pad="4"/>
-<connect gate="G$1" pin="RST" pad="5"/>
-<connect gate="G$1" pin="SCK" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="JST_2PIN" prefix="CN" uservalue="yes">
 <description>&lt;b&gt;JST 2-Pin Connectors of various flavors&lt;/b&gt;
 
@@ -2819,7 +2753,6 @@ DIN A4, landscape with extra doc field</description>
 <part name="U$1" library="SparkFun" deviceset="ARDUINO_MINI" device=""/>
 <part name="JP1" library="SparkFun" deviceset="PINHD-2X3" device="" value="GPS"/>
 <part name="U$2" library="Ava" deviceset="DS1820" device="TO92"/>
-<part name="ISP1" library="adafruit" deviceset="AVRISP" device="-6"/>
 <part name="CN1" library="adafruit" deviceset="JST_2PIN" device="-THM-RA" value="BATTERY"/>
 <part name="IC1" library="adafruit" deviceset="MCP1700" device="INLINE" value="MCP1700 3.3v"/>
 <part name="R4" library="SparkFun" deviceset="RESISTOR" device="AXIAL-0.3" value="4k7"/>
@@ -2853,9 +2786,11 @@ DIN A4, landscape with extra doc field</description>
 <part name="GND10" library="SparkFun" deviceset="GND" device=""/>
 <part name="LED1" library="SparkFun" deviceset="LED" device="3MM"/>
 <part name="JP2" library="SparkFun" deviceset="M08" device="1X08" value="GPS"/>
-<part name="C1" library="SparkFun" deviceset="CAP" device="PTH" value="1uF"/>
-<part name="C2" library="SparkFun" deviceset="CAP" device="PTH" value="1uF"/>
+<part name="C1" library="SparkFun" deviceset="CAP" device="PTH1" value="1uF"/>
+<part name="C2" library="SparkFun" deviceset="CAP" device="PTH1" value="1uF"/>
 <part name="FRAME1" library="frames" deviceset="DINA4_L" device=""/>
+<part name="JP5" library="SparkFun" deviceset="PINHD-2X3" device="" value="ISP"/>
+<part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2866,7 +2801,6 @@ DIN A4, landscape with extra doc field</description>
 <instance part="U$1" gate="G$1" x="96.52" y="104.14"/>
 <instance part="JP1" gate="A" x="111.76" y="50.8"/>
 <instance part="U$2" gate="G$1" x="187.96" y="63.5" rot="R90"/>
-<instance part="ISP1" gate="G$1" x="43.18" y="22.86"/>
 <instance part="CN1" gate="G$1" x="38.1" y="160.02" rot="R180"/>
 <instance part="IC1" gate="1" x="93.98" y="160.02"/>
 <instance part="R4" gate="G$1" x="215.9" y="73.66" rot="R90"/>
@@ -2904,6 +2838,8 @@ DIN A4, landscape with extra doc field</description>
 <instance part="C2" gate="G$1" x="106.68" y="152.4"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="162.56" y="0"/>
+<instance part="JP5" gate="A" x="43.18" y="22.86"/>
+<instance part="GND11" gate="1" x="220.98" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -2956,9 +2892,10 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="P+7" gate="1" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="ISP1" gate="G$1" pin="VCC"/>
 <pinref part="P+6" gate="1" pin="VCC"/>
 <wire x1="58.42" y1="27.94" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="2"/>
+<wire x1="48.26" y1="25.4" x2="58.42" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="1" pin="OUT"/>
@@ -3001,9 +2938,10 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="93.98" y1="149.86" x2="106.68" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ISP1" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="58.42" y1="17.78" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="A" pin="6"/>
+<wire x1="48.26" y1="20.32" x2="58.42" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
@@ -3054,6 +2992,20 @@ DIN A4, landscape with extra doc field</description>
 <wire x1="40.64" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
 <label x="48.26" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="GND"/>
+<wire x1="218.44" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="165.1" x2="220.98" y2="162.56" width="0.1524" layer="91"/>
+<pinref part="U$3" gate="G$1" pin="RFGND2"/>
+<wire x1="220.98" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="165.1" x2="220.98" y2="172.72" width="0.1524" layer="91"/>
+<junction x="220.98" y="165.1"/>
+<pinref part="U$3" gate="G$1" pin="RFGND"/>
+<wire x1="220.98" y1="172.72" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="220.98" y1="157.48" x2="220.98" y2="162.56" width="0.1524" layer="91"/>
+<junction x="220.98" y="162.56"/>
+</segment>
 </net>
 <net name="1-WIRE" class="0">
 <segment>
@@ -3081,19 +3033,6 @@ DIN A4, landscape with extra doc field</description>
 <pinref part="X1" gate="G$1" pin="1"/>
 <pinref part="U$3" gate="G$1" pin="RFOUT"/>
 <wire x1="218.44" y1="167.64" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="X1" gate="G$1" pin="GND"/>
-<wire x1="218.44" y1="165.1" x2="220.98" y2="165.1" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="165.1" x2="220.98" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="RFGND2"/>
-<wire x1="220.98" y1="162.56" x2="228.6" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="220.98" y1="165.1" x2="220.98" y2="172.72" width="0.1524" layer="91"/>
-<junction x="220.98" y="165.1"/>
-<pinref part="U$3" gate="G$1" pin="RFGND"/>
-<wire x1="220.98" y1="172.72" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3135,9 +3074,10 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="ISP1" gate="G$1" pin="MOSI"/>
 <wire x1="58.42" y1="22.86" x2="60.96" y2="22.86" width="0.1524" layer="91"/>
 <label x="60.96" y="22.86" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP5" gate="A" pin="4"/>
+<wire x1="48.26" y1="22.86" x2="58.42" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="11"/>
@@ -3147,9 +3087,9 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="ISP1" gate="G$1" pin="MISO"/>
-<wire x1="30.48" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="27.94" y="25.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="1"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="12"/>
@@ -3159,9 +3099,9 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="ISP1" gate="G$1" pin="SCK"/>
-<wire x1="30.48" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="22.86" x2="27.94" y2="22.86" width="0.1524" layer="91"/>
 <label x="27.94" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="3"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="13"/>
@@ -3171,9 +3111,9 @@ DIN A4, landscape with extra doc field</description>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="ISP1" gate="G$1" pin="RST"/>
-<wire x1="30.48" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
 <label x="27.94" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP5" gate="A" pin="5"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="RST"/>
