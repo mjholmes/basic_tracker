@@ -172,10 +172,11 @@
 <text x="33.02" y="37.338" size="1.778" layer="22" font="vector" rot="MR0">basic tracker v1</text>
 <text x="33.02" y="34.798" size="1.27" layer="22" font="vector" rot="MR0">2012-08-29</text>
 <text x="53.34" y="4.318" size="1.27" layer="22" font="vector" rot="MR0">http://github.com/mjholmes</text>
-<text x="64.77" y="15.748" size="1.778" layer="22" font="vector" rot="MR0">1-Wire: D3</text>
-<text x="64.77" y="18.288" size="1.778" layer="22" font="vector" rot="MR0">SoftSerial (Tx/Rx): D4/D5</text>
-<text x="64.77" y="13.208" size="1.778" layer="22" font="vector" rot="MR0">Battery ADC: A0</text>
-<text x="64.77" y="10.668" size="1.778" layer="22" font="vector" rot="MR0">LED: D2</text>
+<text x="64.77" y="17.018" size="1.778" layer="22" font="vector" rot="MR0">1-Wire: D3</text>
+<text x="64.77" y="19.558" size="1.778" layer="22" font="vector" rot="MR0">SoftSerial (Tx/Rx): D4/D5</text>
+<text x="64.77" y="14.478" size="1.778" layer="22" font="vector" rot="MR0">Battery ADC: A0</text>
+<text x="64.77" y="11.938" size="1.778" layer="22" font="vector" rot="MR0">NTX2 (EN/TX): D6/7</text>
+<text x="64.77" y="9.398" size="1.778" layer="22" font="vector" rot="MR0">LED: D2</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -1100,10 +1101,6 @@ These strictly adhere to the PCB Train board house specs. The rules are &lt;i&gt
 <wire x1="12.3444" y1="10.5156" x2="12.7" y2="10.16" width="0.4" layer="16"/>
 </signal>
 </signals>
-<errors>
-<approved hash="3,1,2acfe22f3608fee8"/>
-<approved hash="3,16,29b30353d776fd96"/>
-</errors>
 </board>
 </drawing>
 </eagle>
