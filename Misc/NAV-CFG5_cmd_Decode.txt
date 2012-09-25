@@ -1,0 +1,9 @@
+length mask dynModel fixMode    fixedAlt   fixedaltvar   minelev drLimit  pDop   tDop   pAcc   tAcc  staticHoldThresh dgpsTimeout     res2         res3         res4      CK_A  CK_B
+  U2    X2     U1       U1         I4           U4          I1      U1     U2     U2     U2     U2          U1            U1           U4           U4           U4        U1    U1
+
+
+
+24,00  FF,00   06       03    00,00,00,00  10,27,00,00      05      00   FA,00  FA,00   64,00  2C,01        00            00       00,00,00,00  00,00,00,00  00,00,00,00   16    DC
+
+36 bytes
+     Set all bits
