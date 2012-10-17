@@ -2,4 +2,6 @@ Basic tracker
 
 The project is to create a simple tracking PCB that can be used for tracking high
 altitude balloons. The project is designed to be easilly assembled from off the shelf
-modules and easilly obtainable through hole soldered components.
+modules and easilly obtainable through hole soldered components. An arduino Pro mini
+is used rather than designing the board to have an ATMega328 to reduct component count
+and increase reliability.
